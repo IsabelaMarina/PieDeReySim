@@ -1,0 +1,81 @@
+/* body{
+    overflow: hidden;
+} */
+
+main{
+    overflow-x: scroll;
+    height: 90.8vh;
+}
+
+.contenPrin{
+    /* border: 1px solid red; */
+    display: inline;
+    position:relative;
+    /* overflow:auto; */
+    /* width: max-content; */
+}
+
+/* .fixedPiece{
+    display:none !important;
+} */
+
+.contenPiece{
+    display:inline-block;
+    /* border: solid 1px blue; */
+    position: absolute;
+}
+
+.contenInt{
+    display: inline-block;
+    /* border: solid 1px fuchsia; */
+    position: absolute;
+}
+
+#Cuerpo{
+    top: 108px;
+    left: 74px;
+}
+
+#Pulg{
+    top:78px;
+    left:77px;
+}
+
+#Milis{
+    top:178px;
+    left:74px;
+    /* background-color:blueviolet; */
+    width: 100px;
+    height: 100px;
+    /* position: absolute; */
+    /* background-image: url('../imgs/MedidorMilis.png'); */
+}
+
+#Dark{
+    top: 78px;
+    left: 2px;
+}
+
+#Tip{
+    left:2px;
+}
+
+#Movedor{
+    cursor:grab;
+}
+
+/* #mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+  }
+  
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+  } */

@@ -1,0 +1,100 @@
+<!-- Simulador de Pie de Rey -->
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Pie de Rey - Simuladores</title>
+    <link rel="icon" type="image/png" href="../imgs/LogoMioVer.png"/>
+
+    
+    <!-- Mis Fuentes -->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=KoHo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
+
+    <!-- Bootstrap CSS (de algo tendrá que servir) -->
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap-min.css">
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/Principal.css"> <!--Estilo de los elementos insertados-->
+    <link rel="stylesheet" href="css/PieDeReySim.css">  <!--Estilo de los elementos propios de esta página-->
+
+    <!-- My JavaScript -->
+    <!--script src="js/PieDeReySim.js"></script-->           <!--JS para el simulador como tal-->
+    <script src="../js/InsertElements.js"></script>     <!--Inserta las barras laterales predeterminadas-->
+    <script src="../js/Principal.js"></script>          <!--Controla los elementos insertados-->
+    <script src="js/PieDeReyInsert.js"></script>        <!--Cambia los títulos para los propios de esta página-->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <!-- JavaScript de Bootstrap -->
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+    <!--Font Awesome CDN (Content Delivery Network)-->
+    <link rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous"
+    />
+
+</head>
+
+<body onresize="normalizar()" onload="rellenar();rellenarThis();normalizar()">
+    
+    <div id="asideIzqPlace"></div>
+    <div id="asideDerSim"></div>
+    <div id="headerPlace"></div>
+
+    <main>
+        <!-- Todo lo que está en el main debería ser genérico -->
+        <h1>Pie de Rey</h1>
+        <p class="fechas">Creado el 1° de Febrero de 2021 // Última modificación el 3 de Febrero de 2021</p>
+        <hr><!--Línea-->
+        <br><!--Espacio-->
+        
+        <div class="Rey contenPrin" id="PieCompleto">
+            
+            <div class="Rey contenPiece" id="Movedor">
+                <div class="Rey contenInt MoverPiece" id="Tip">
+                    <img id="TipPic" src="imgs/PuntaMovil.png"/>
+                </div>
+                <div class="Rey contenInt MoverPiece" id="Dark">
+                    <img id="DarkPic" src="imgs/PiezaMovil.png"/>
+                </div>
+                <div class="Rey contenInt MoverPiece" id="Pulg">
+                    <img id="PulgPic" src="imgs/MedidorPulgs.png"/>
+                </div>
+                <div class="Rey contenInt MoverPiece" id="Milis">
+                    <img id="MilisPic" src="imgs/MedidorMilis.png"/>
+                </div>
+            </div>
+            <div class="Rey contenPiece fixedPiece" id="Cabeza">
+                <img id="CabezaPic" src="imgs/Cabezal.png"/> <!--width=100px/>-->
+            </div>
+            <div class="Rey contenPiece fixedPiece" id="Cuerpo">
+                <img id="CuerpoPic" src="imgs/ReglaCentral.png"/>
+            </div>
+            <script src="js/PieDeReySim.js"></script>
+        </div>
+
+        <!-- <div id="mydiv">
+            <div id="mydivheader">Click here to move</div>
+            <p>Move</p>
+            <p>this</p>
+            <p>DIV</p>
+        </div> -->
+
+        
+
+        <!-- <figure>
+            <img src="imgs/LogoMioVer.png" alt="Mi Sitio" title="Mi Sitio" width="100px"/>
+        </figure> -->
+    </main>
+</body>
+</html>
